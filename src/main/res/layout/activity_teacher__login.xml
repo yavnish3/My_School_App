@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="294dp"
+            android:layout_height="245dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/logo"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_logo"
+            android:id="@+id/proglogin"/>
+
+        <EditText
+            android:id="@+id/et_user"
+            android:drawableLeft="@drawable/ic_action_userid"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="25dp"
+            android:background="#EDEDF7"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_logo"
+            android:ems="10"
+            android:hint="Email Id "
+            android:textColor="#0C0C0C"
+            android:textColorHint="#0C0C0C"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/et_user"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#EDEDF7"
+            android:ems="10"
+            android:hint="Password"
+            android:textColor="#0C0C0C"
+            android:textColorHint="#0C0C0C"
+            android:textSize="16dp"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_pass"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="40dp"
+            app:cardElevation="10dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:id="@+id/cardview"
+            android:onClick="login">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_card_log"
+                    android:text="Login"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/cardview"
+            android:layout_marginTop="20dp"
+            android:background="#11000000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take 'ID' 'PASSWORD' From School"
+                android:textColor="#EDEDF7"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

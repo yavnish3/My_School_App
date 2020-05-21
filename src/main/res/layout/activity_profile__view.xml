@@ -1,0 +1,408 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:id="@+id/header_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/profileback"
+        android:scaleType="centerCrop"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/header_cover_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-130dp"
+        android:elevation="5dp"
+        android:src="@drawable/imgprofile"
+        android:padding="20dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_cover_image"
+        android:background="#E91E63"
+        android:elevation="4dp"
+        android:paddingBottom="24dp">
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_edit_black_24dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="Profile Name"
+            android:textColor="#fff"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_layout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/mother"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/father"
+                android:textColor="#00f"
+                android:layout_marginTop="10dp"
+                android:text="Mother Name:-"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/mothername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/father"
+                android:layout_toRightOf="@+id/mother"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:text="Enter Mother Name"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/father"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:text="Father Name"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/fathername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/father"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:text="Enter Father Name"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tv_classfix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mothername"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="Class:- "
+                android:textColor="#00f"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Class"
+                android:id="@+id/tv_class"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/mothername"
+                android:layout_toRightOf="@+id/tv_classfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_classfix"
+                android:layout_marginTop="10dp"
+                android:text="Address:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_addressfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter address"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:id="@+id/tv_address"
+                android:layout_below="@+id/tv_classfix"
+                android:layout_toRightOf="@+id/tv_addressfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_addressfix"
+                android:layout_marginTop="10dp"
+                android:text="Category:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_categoryfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Category"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_category"
+                android:background="@null"
+                android:layout_below="@+id/tv_addressfix"
+                android:layout_toRightOf="@+id/tv_categoryfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_categoryfix"
+                android:layout_marginTop="10dp"
+                android:text="Email:- "
+                android:textColor="#00f"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/tv_emailfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Email"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_email"
+                android:background="@null"
+                android:layout_below="@+id/tv_categoryfix"
+                android:layout_toRightOf="@+id/tv_categoryfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_emailfix"
+                android:layout_marginTop="10dp"
+                android:text="Mobile No.:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_mobilefix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Mobile Number"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_mobile"
+                android:background="@null"
+                android:layout_below="@+id/tv_emailfix"
+                android:layout_toRightOf="@+id/tv_categoryfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_mobilefix"
+                android:layout_marginTop="10dp"
+                android:text="Date Of Birth:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_dobfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter DOB"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_dob"
+                android:background="@null"
+                android:layout_below="@+id/tv_mobilefix"
+                android:layout_toRightOf="@+id/tv_dobfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_dobfix"
+                android:layout_marginTop="10dp"
+                android:text="Aadhaar Card No.:- "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:id="@+id/tv_adharfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aadhaar Card Number"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_adhar"
+                android:background="@null"
+                android:layout_below="@+id/tv_dobfix"
+                android:layout_toRightOf="@+id/tv_adharfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_adharfix"
+                android:layout_marginTop="10dp"
+                android:text="Nationalty:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_nationaltyfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Nationalty"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_nationalty"
+                android:background="@null"
+                android:layout_below="@+id/tv_adharfix"
+                android:layout_toRightOf="@+id/tv_nationaltyfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_nationaltyfix"
+                android:layout_marginTop="10dp"
+                android:text="Father Occupation:- "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:id="@+id/tv_occupationfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father Occupation"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_occupation"
+                android:background="@null"
+                android:layout_below="@+id/tv_nationaltyfix"
+                android:layout_toRightOf="@+id/tv_occupationfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_occupationfix"
+                android:layout_marginTop="10dp"
+                android:text="Gender:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_genderfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Gender"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_gender"
+                android:background="@null"
+                android:layout_below="@+id/tv_occupationfix"
+                android:layout_toRightOf="@+id/tv_genderfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_genderfix"
+                android:layout_marginTop="10dp"
+                android:text="Password:- "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:id="@+id/tv_passwordfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Password"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_password"
+                android:background="@null"
+                android:layout_below="@+id/tv_genderfix"
+                android:layout_toRightOf="@+id/tv_passwordfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_passwordfix"
+                android:layout_marginTop="10dp"
+                android:text="Student Id:- "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:id="@+id/tv_studentidfix"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Student Id"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_studentid"
+                android:background="@null"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/tv_passwordfix"
+                android:layout_toRightOf="@+id/tv_studentidfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

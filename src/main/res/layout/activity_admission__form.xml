@@ -1,0 +1,250 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/admissionback"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/iv_adphoto"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp"
+            android:onClick="addphoto"
+            android:background="@drawable/ic_action_camera"
+            />
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_adphoto"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Enter Your Name"
+        android:textSize="20dp"
+        android:id="@+id/et_adname"
+        android:background="#EFEFF3"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/et_adname"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter Father Name"
+            android:textSize="20dp"
+            android:id="@+id/adfname"
+            android:background="#EFEFF3"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/adfname"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter Mother Name"
+            android:textSize="20dp"
+            android:id="@+id/admothername"
+            android:background="#EFEFF3"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textPostalAddress"
+            android:layout_below="@+id/admothername"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter Address"
+            android:textSize="20dp"
+            android:id="@+id/et_adaddress"
+            android:background="#EFEFF3"/>
+        <Spinner
+            android:id="@+id/spinclass"
+            android:layout_width="149dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/et_adaddress"
+            android:background="#EFEFF3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/spin_adcast"
+            android:background="#EFEFF3"
+            android:layout_below="@+id/et_adaddress"
+            android:layout_toRightOf="@id/spinclass"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/card_gender"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="30dp"
+            android:layout_below="@+id/spinclass"
+            android:elevation="10dp">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/radio_group"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:theme="@style/card_color"
+                    android:padding="8dp"
+                    android:id="@+id/radio_male"
+                    android:textSize="25dp"
+                    android:drawableRight="@drawable/ic_action_gender"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:theme="@style/radio_color"
+                    android:padding="8dp"
+                    android:id="@+id/radio_female"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="25dp"
+                    android:drawableRight="@drawable/ic_action_gender"
+                    />
+            </RadioGroup>
+
+        </android.support.v7.widget.CardView>
+
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/card_gender"
+        android:layout_marginLeft="15dp"
+        android:hint="Enter Email Address"
+        android:textSize="20dp"
+        android:id="@+id/et_ademail"
+        android:background="#EFEFF3"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/et_ademail"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter mobile Number"
+            android:textSize="20dp"
+            android:id="@+id/et_admobile"
+            android:background="#EFEFF3"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/et_admobile"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter date Of Birth (DD/MM/YYYY)"
+            android:textSize="20dp"
+            android:id="@+id/et_addob"
+            android:background="#EFEFF3"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:layout_below="@+id/et_addob"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter Aadhaar Card Number"
+            android:textSize="20dp"
+            android:id="@+id/et_adhar"
+            android:background="#EFEFF3"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/et_adhar"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter Nationalty"
+            android:textSize="20dp"
+            android:id="@+id/et_nationalty"
+            android:background="#EFEFF3"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/et_nationalty"
+            android:layout_marginLeft="15dp"
+            android:hint="Enter Father Occupation"
+            android:textSize="20dp"
+            android:id="@+id/et_occupation"
+            android:background="#EFEFF3"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_occupation"
+            app:cardCornerRadius="25dp"
+            android:theme="@style/CardView"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            app:cardElevation="10dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#F505B9"
+            android:id="@+id/stcardview"
+            android:onClick="submit">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_card_stlog"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

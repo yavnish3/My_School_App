@@ -1,0 +1,75 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:id="@+id/iv_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back,"
+            android:textSize="30dp"
+            android:textColor="#00f"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:id="@+id/tv_wel"
+            android:layout_toRightOf="@id/iv_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login To Continue"
+            android:layout_below="@id/tv_wel"
+            android:layout_toRightOf="@id/iv_logo"
+            android:textSize="25dp"
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/student"
+            android:layout_marginTop="60dp"
+            android:id="@+id/iv_st"
+            android:onClick="stmsg"
+            android:layout_marginLeft="-40dp"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_below="@+id/iv_logo"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/iv_teach"
+            android:layout_below="@id/iv_st"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="-40dp"
+            android:src="@drawable/teacher"
+            android:onClick="teachermsg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Message"
+            android:layout_below="@id/iv_st"
+            android:layout_marginLeft="-35dp"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/tv_stlog"
+            android:textColor="#00f"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Message"
+            android:layout_marginLeft="-40dp"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_below="@id/iv_teach"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/tv_teachlog"
+            android:textColor="#00f"/>
+    </RelativeLayout>
+</ScrollView>

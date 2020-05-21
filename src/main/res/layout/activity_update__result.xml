@@ -1,0 +1,98 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/admissionback"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="60dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Enter Test Type"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:textColor="#00f"
+                    android:textStyle="bold"
+                    android:id="@+id/tsty"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Enter Subject"
+                    android:layout_below="@+id/tsty"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/sub"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="number"
+                    android:hint="Enter Obtain Marks"
+                    android:layout_below="@+id/sub"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/mrkob"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Enter Total Marks"
+                    android:layout_below="@+id/mrkob"
+                    android:textSize="22dp"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/tlmrk"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:onClick="updatrslt"
+                    android:layout_below="@+id/tlmrk"
+                    android:textSize="30dp"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#FFEB3B"
+                    android:id="@+id/UpNoBtn"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="delete"
+                    android:textAllCaps="false"
+                    android:layout_below="@+id/tlmrk"
+                    android:layout_toRightOf="@+id/UpNoBtn"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="130dp"
+                    android:textSize="30dp"
+                    android:onClick="deletereslt"
+                    android:elevation="10dp"
+                    android:background="#E91E63"
+                    android:id="@+id/DltNoBtn"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

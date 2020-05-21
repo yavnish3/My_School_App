@@ -1,0 +1,60 @@
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/cardview"
+    android:layout_below="@+id/stcardview"
+    android:layout_marginTop="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_listphoto"
+            android:src="@drawable/imgprofile"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_toRightOf="@+id/iv_listphoto"
+            android:textColor="#00f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:id="@+id/tv_listname"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Father Name"
+            android:layout_toRightOf="@+id/iv_listphoto"
+            android:layout_below="@id/tv_listname"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_listfather"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mother Name"
+            android:layout_toRightOf="@+id/iv_listphoto"
+            android:layout_below="@id/tv_listfather"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tv_listmather"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

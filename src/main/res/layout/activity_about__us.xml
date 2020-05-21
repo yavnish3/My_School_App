@@ -1,0 +1,42 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="About Us"
+    android:layout_marginTop="20dp"
+    android:textColor="#F44336"
+    android:gravity="center"
+    android:textSize="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="20dp"
+        android:text="Presidency Public School was founded in 2002 under krishna educational society The school was at shatabdi nagar on the delhi road meerut national highway (NH-58) The green environment of the school provide much needed peace and quietude for meaningful leaving experience for the children over the past fifteen years the school has suceeded in enrolling students from pre-primary to senior secondary"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/abs"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="It is Co-educational sr. secondary School with english as a medium of instruction and is affilated to C.B.S.E new delhi The school provides faciliyies of a well stocked library computer,Math and science lab,aplay ground pure Drinking water, Play room for tiny totus The school has wide range of Co- curricular activities such as music, dance,art and craft,games,karate yoga etc other services like medical facilties and transport are also availablefor the convenience of the student.The school lay emphasis educational.Discipline and character building are given highest priority.
+
+The proud of its team of well qualified, experienced and dedicated teachers"
+        android:textSize="20dp"/>
+
+</LinearLayout>
+</ScrollView>

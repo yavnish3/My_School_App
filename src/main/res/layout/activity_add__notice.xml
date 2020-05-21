@@ -1,0 +1,76 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admissionback"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Notice"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:id="@+id/tv_addhomework"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#EDEDF5"
+        android:hint="Notice Title"
+        android:gravity="center"
+        android:textColorHint="#00f"
+        android:textSize="30dp"
+        android:layout_below="@+id/tv_addhomework"
+        android:layout_marginTop="40dp"
+        android:id="@+id/et_noticetitle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#EDEDF5"
+        android:hint="Write Notice"
+        android:gravity="center"
+        android:id="@+id/et_noticedis"
+        android:textColorHint="#00f"
+        android:textSize="30dp"
+        android:layout_below="@+id/et_noticetitle"
+        android:layout_marginTop="40dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_noticedis"
+        app:cardCornerRadius="25dp"
+        android:theme="@style/CardView"
+        android:layout_marginTop="30dp"
+        app:cardElevation="10dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#4CB626"
+        android:id="@+id/stcardview"
+        android:onClick="addnotice">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_card_stlog"
+                android:text="Add Notice"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+</ScrollView>

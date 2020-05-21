@@ -1,0 +1,367 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:id="@+id/header_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/profileback"
+        android:scaleType="centerCrop"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/header_cover_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-130dp"
+        android:elevation="5dp"
+        android:src="@drawable/imgprofile"
+        android:padding="20dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_cover_image"
+        android:background="#E91E63"
+        android:elevation="4dp"
+        android:paddingBottom="24dp">
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_edit_black_24dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@null"
+            android:text="Profile Name"
+            android:textColor="#fff"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_layout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/mother"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/father"
+                android:layout_marginTop="10dp"
+                android:text="Email:-"
+                android:textColor="#00f"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/father"
+                android:layout_toRightOf="@+id/mother"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:text="Enter Email"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/father"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:text="Father Name"
+                android:textSize="22dp" />
+            <EditText
+                android:id="@+id/fathername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/father"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:text="Enter Father Name"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mother"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Qualification:- "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:id="@+id/tv_classfix"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Qualification"
+                android:id="@+id/tv_qulification"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:layout_below="@id/mother"
+                android:layout_toRightOf="@+id/tv_classfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_classfix"
+                android:layout_marginTop="10dp"
+                android:text="Address:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_addressfix"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter address"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_address"
+                android:background="@null"
+                android:layout_below="@+id/tv_classfix"
+                android:layout_toRightOf="@+id/tv_addressfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_addressfix"
+                android:layout_marginTop="10dp"
+                android:text="Category:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_categoryfix"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Category"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_category"
+                android:background="@null"
+                android:layout_below="@+id/tv_addressfix"
+                android:layout_toRightOf="@+id/tv_categoryfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_categoryfix"
+                android:layout_marginTop="10dp"
+                android:text="Subject:- "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColorHint="#00f"
+                android:textColor="#00f"
+                android:id="@+id/tv_subjectfix"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Subject"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_subject"
+                android:background="@null"
+                android:layout_below="@+id/tv_categoryfix"
+                android:layout_toRightOf="@+id/tv_categoryfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_subjectfix"
+                android:layout_marginTop="10dp"
+                android:text="Mobile No.:- "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:id="@+id/tv_mobilefix"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Mobile Number"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_mobile"
+                android:background="@null"
+                android:layout_below="@+id/tv_subjectfix"
+                android:layout_toRightOf="@+id/tv_categoryfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_mobilefix"
+                android:layout_marginTop="10dp"
+                android:text="Date Of Birth:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_dobfix"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter DOB"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_dob"
+                android:background="@null"
+                android:layout_below="@+id/tv_mobilefix"
+                android:layout_toRightOf="@+id/tv_dobfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_dobfix"
+                android:layout_marginTop="10dp"
+                android:text="Aadhaar No.:- "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#00f"
+                android:id="@+id/tv_adharfix"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aadhaar Card Number"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_adhar"
+                android:background="@null"
+                android:layout_below="@+id/tv_dobfix"
+                android:layout_toRightOf="@+id/tv_adharfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_nationaltyfix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_adharfix"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="Gender:- "
+                android:textColor="#00f"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Gender"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:id="@+id/tv_gender"
+                android:layout_below="@+id/tv_adharfix"
+                android:layout_toRightOf="@+id/tv_nationaltyfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_below="@+id/tv_nationaltyfix"
+                android:layout_marginTop="10dp"
+                android:text="Password:- "
+                android:textSize="20dp"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:id="@+id/tv_occupationfix"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Password"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_password"
+                android:background="@null"
+                android:layout_below="@+id/tv_nationaltyfix"
+                android:layout_toRightOf="@+id/tv_occupationfix"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_occupationfix"
+                android:layout_marginTop="20dp"
+                android:text="Update"
+                android:onClick="update"
+                android:layout_marginBottom="25dp"
+                android:textSize="28dp"
+                android:layout_marginRight="30dp"
+                android:textAllCaps="false"
+                android:id="@+id/btn1"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/admissionback"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_occupationfix"
+                android:layout_toRightOf="@+id/btn1"
+                android:layout_marginTop="20dp"
+                android:text="Delete"
+                android:onClick="delete"
+                android:layout_marginBottom="25dp"
+                android:textSize="28dp"
+                android:textAllCaps="false"
+                android:id="@+id/btn2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/admissionback"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

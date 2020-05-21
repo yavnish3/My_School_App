@@ -1,0 +1,170 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo"
+            android:id="@+id/iv_sthomelogo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_sthomelogo"
+            android:text="Welcome Here,"
+            android:textSize="35dp"
+            android:id="@+id/tv_sthomewel"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enjoy Your Day"
+            android:textSize="25dp"
+            android:textColor="#00f"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/iv_sthomelogo"
+            android:layout_below="@+id/tv_sthomewel"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="10dp"
+            android:onClick="stprofile"
+            android:layout_below="@+id/iv_sthomelogo"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/stprofile"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/iv_sthome1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_sthome1"
+            android:layout_marginLeft="70dp"
+            android:textColor="#0A0A0A"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/stnotice"
+            android:layout_below="@+id/iv_sthomelogo"
+            android:layout_marginTop="50dp"
+            android:elevation="10dp"
+            android:onClick="stnotice"
+            android:layout_toRightOf="@id/iv_sthome1"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/iv_sthome2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notices"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_sthome2"
+            android:layout_toRightOf="@id/iv_sthome1"
+            android:layout_marginLeft="70dp"
+            android:textColor="#0A0A0A"
+            android:textSize="20dp"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/iv_sthome2"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/sthomework"
+            android:layout_toRightOf="@id/iv_sthome4"
+            android:layout_marginLeft="30dp"
+            android:elevation="10dp"
+            android:onClick="sthomework"
+            android:id="@+id/iv_sthome3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Works"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_sthome3"
+            android:layout_toRightOf="@id/iv_sthome4"
+            android:layout_marginLeft="50dp"
+            android:textColor="#0A0A0A"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/iv_sthome1"
+            android:layout_marginTop="50dp"
+            android:elevation="10dp"
+            android:onClick="stmessage"
+            android:src="@drawable/stmessage"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/iv_sthome4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_sthome4"
+            android:layout_marginLeft="55dp"
+            android:textColor="#0A0A0A"
+            android:textSize="20dp"/>
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/iv_sthome4"
+            android:layout_marginTop="50dp"
+            android:elevation="10dp"
+            android:onClick="stresult"
+            android:src="@drawable/stresult"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/iv_sthome5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_sthome5"
+            android:layout_marginLeft="70dp"
+            android:textColor="#0A0A0A"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/iv_sthome4"
+            android:layout_marginTop="50dp"
+            android:elevation="10dp"
+            android:layout_toRightOf="@id/iv_sthome5"
+            android:onClick="stsetting"
+            android:src="@drawable/stsetting"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/iv_sthome6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_toRightOf="@id/iv_sthome5"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_sthome6"
+            android:layout_marginLeft="70dp"
+            android:textColor="#0A0A0A"
+            android:textSize="20dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

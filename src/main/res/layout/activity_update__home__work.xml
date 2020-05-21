@@ -1,0 +1,81 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/admissionback"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        tools:context=".UpdateNotice">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="60dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Subject Name"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    android:textColor="#00f"
+                    android:textStyle="bold"
+                    android:id="@+id/UpNoTl"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Home Work discription"
+                    android:layout_below="@+id/UpNoTl"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/UpNoDis"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:onClick="updatenotice"
+                    android:layout_below="@+id/UpNoDis"
+                    android:textSize="30dp"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#FFEB3B"
+                    android:id="@+id/UpNoBtn"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="delete"
+                    android:textAllCaps="false"
+                    android:layout_below="@+id/UpNoDis"
+                    android:layout_toRightOf="@+id/UpNoBtn"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="130dp"
+                    android:textSize="30dp"
+                    android:onClick="deleteNotice"
+                    android:elevation="10dp"
+                    android:background="#E91E63"
+                    android:id="@+id/DltNoBtn"/>
+
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

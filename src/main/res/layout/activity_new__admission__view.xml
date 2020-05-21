@@ -1,0 +1,222 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/admissionback"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="center">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:id="@+id/cardview"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:- "
+                android:layout_marginTop="5dp"
+                android:textColor="#00f"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:id="@+id/namefix"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter name"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/namefix"
+                android:id="@+id/name"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father Name:- "
+                android:textColor="#00f"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/namefix"
+                android:id="@+id/fatherfix"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter name"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/namefix"
+                android:layout_toRightOf="@+id/fatherfix"
+                android:id="@+id/father"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class:- "
+                android:textColor="#00f"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/fatherfix"
+                android:id="@+id/classfix"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Class"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/fatherfix"
+                android:layout_toRightOf="@+id/classfix"
+                android:id="@+id/Class"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:- "
+                android:textColor="#00f"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/classfix"
+                android:id="@+id/emailfix"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Email"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/classfix"
+                android:layout_toRightOf="@+id/emailfix"
+                android:id="@+id/email"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:- "
+                android:textColor="#00f"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/emailfix"
+                android:id="@+id/addressfix"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Address"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/emailfix"
+                android:layout_toRightOf="@+id/addressfix"
+                android:id="@+id/address"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:- "
+                android:textColor="#00f"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/addressfix"
+                android:id="@+id/genderfix"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Gender"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/addressfix"
+                android:layout_toRightOf="@+id/genderfix"
+                android:id="@+id/gender"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No.:- "
+                android:textColor="#00f"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/genderfix"
+                android:id="@+id/mobilefix"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Mobile No."
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/genderfix"
+                android:layout_toRightOf="@+id/mobilefix"
+                android:id="@+id/mobile"
+                android:layout_marginBottom="10dp"
+                android:textSize="22dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/cardview"
+           android:layout_marginTop="20dp"
+           android:text="Verify"
+           android:onClick="verify"
+           android:layout_marginBottom="25dp"
+           android:textSize="28dp"
+           android:layout_marginRight="30dp"
+           android:textAllCaps="false"
+           android:id="@+id/btn1"
+           android:layout_marginLeft="100dp"
+           android:background="#2ADF66"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/cardview"
+           android:layout_toRightOf="@+id/btn1"
+           android:layout_marginTop="20dp"
+           android:text="Delete"
+           android:onClick="delete"
+           android:layout_marginBottom="25dp"
+           android:textSize="28dp"
+           android:textAllCaps="false"
+           android:id="@+id/btn2"
+           android:layout_centerHorizontal="true"
+           android:background="#E0CD28"/>
+
+   </RelativeLayout>
+
+
+
+
+</ScrollView>
